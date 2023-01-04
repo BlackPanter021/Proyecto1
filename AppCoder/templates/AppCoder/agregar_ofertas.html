@@ -1,0 +1,20 @@
+{% extends "AppCoder/padre.html" %}
+
+{% block titulo %}
+
+    Nuevas Ofertas 
+
+{% endblock %}
+
+{% block descripcion%}
+<form action="" method="POST"> {% csrf_token %}
+
+    <p>
+        {{formu3.as_p}}
+    </p>
+
+    <input type="submit" value="Guardar">
+    
+
+</form>
+{% endblock%}

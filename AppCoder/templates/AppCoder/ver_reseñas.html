@@ -1,0 +1,27 @@
+{% extends "AppCoder/padre.html" %}
+
+
+
+
+
+{% block titulo %}
+
+    Reseñas de videojuegos
+
+{% endblock %}
+
+
+{% block descripcion %}
+
+
+
+{% for reseñas in reseñas %}
+
+<p>Nombre:{{reseñas.Nombre_del_videojuego}} </p>
+<p>Fecha:{{reseñas.Fecha}} </p>
+<p>Reseña:{{reseñas.Reseña}} </p>
+<p>Calificacion:{{reseñas.Calificacion}} </p>
+<p>Imagen:{{reseñas.Imagen}} </p>      
+#########################################                   
+{% endfor %}
+{% endblock %}

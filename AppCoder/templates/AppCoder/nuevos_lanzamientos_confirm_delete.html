@@ -1,0 +1,22 @@
+{% extends "AppCoder/padre.html" %}
+
+
+
+{% block titulo %}
+
+    Borrar lanzamientos
+
+{% endblock %}
+
+{% block descripcion%}
+
+<form action="" method="POST"> {% csrf_token %}
+
+    <p> Estas seguro de borrar el nuevo lanzamiento {{object}} ?</p>
+
+    <input type="submit" value="Eliminar">
+    
+
+</form>
+
+{% endblock%}

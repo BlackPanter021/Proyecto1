@@ -1,0 +1,42 @@
+{% extends "AppCoder/padre.html" %}
+
+
+{% load static %}
+
+
+{% block titulo %}
+
+    Bienvenido al 8x !! 
+
+
+
+{% endblock %}
+
+{% block descripcion %}
+
+{{mensaje}}
+    
+    
+<form action="/AppCoder/resultado/"method="GET">
+
+    <input type="texto" name="nombre" id="nombre">
+
+
+    <input type="submit" value="Buscar">
+
+
+</form>
+
+
+
+<P>Estamos buscando la reseña de : {{nombre}}</P>
+
+{% for nombre in nombre %}
+
+<p>Nombre: {{nombre.Nombre_del_videojuego}}---- Fecha{{nombre.Fecha}}</p>
+
+{% endfor %}
+
+
+{% endblock %}
+

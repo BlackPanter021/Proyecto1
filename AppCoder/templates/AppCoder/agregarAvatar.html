@@ -1,0 +1,30 @@
+{% extends "AppCoder/padre.html" %}
+
+
+{% load static %}
+
+
+{% block titulo %}
+
+Aca podemos agregar un avatar.
+
+{% endblock %}
+
+{% block descripcion %}
+
+<form action=""method="POST" enctype="multipart/form-data">{% csrf_token %}
+
+
+        {{formulario2.as_p}}
+
+        <button type="submit">Agregar</button>
+
+
+
+
+
+
+</form>
+
+
+{% endblock %}

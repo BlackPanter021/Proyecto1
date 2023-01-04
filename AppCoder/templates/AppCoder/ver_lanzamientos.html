@@ -1,0 +1,29 @@
+{% extends "AppCoder/padre.html" %}
+
+
+
+
+
+{% block titulo %}
+
+    Nuevos lanzamientos
+
+{% endblock %}
+
+
+{% block descripcion %}
+
+Aca veremos los nuevos lanzamientos
+
+{% for nuevos_lanzamientos in nuevos_lanzamientos  %}
+
+    <p style="color:azure;">{{nuevos_lanzamientos.Nombre_del_videojuego}} 
+                            {{nuevos_lanzamientos.Fecha_de_lanzamiento}} </p>
+
+<button>
+    <a href="{% 'url eliminar' lanzamiento %} "> Eliminar </a>
+</button>
+                            
+
+{% endfor %}
+{% endblock %}

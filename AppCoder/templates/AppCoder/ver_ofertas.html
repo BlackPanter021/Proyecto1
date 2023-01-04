@@ -1,0 +1,26 @@
+{% extends "AppCoder/padre.html" %}
+
+
+
+
+
+{% block titulo %}
+
+    ofertas
+
+{% endblock %}
+
+
+{% block descripcion %}
+
+
+
+{% for oferta in oferta %}
+
+    <p>Nombre:{{oferta.Nombre_del_juego}} </p>
+    <p>Fecha:{{oferta.Descripcion_del_juego }} </p>
+    <p>Reseña:{{oferta.Ofertas}} </p> 
+    ########################################
+
+{% endfor %}
+{% endblock %}

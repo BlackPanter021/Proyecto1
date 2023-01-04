@@ -1,0 +1,61 @@
+{% extends "AppCoder/padre.html" %}
+
+
+
+
+
+{% block titulo %}
+
+    Nuevos lanzamientos
+
+{% endblock %}
+
+
+{% block descripcion %}
+
+Aca veremos los nuevos lanzamientos
+
+    {%for lanzamientos in object_list %}
+
+    <p>Nombre:{{lanzamientos.Nombre_del_videojuego}} </p>
+    <p>Fecha:{{lanzamientos.Fecha_de_lanzamiento}} </p>
+    
+    <a href="{% url 'Detalle lanzamientos' lanzamientos.id %} "> Detalle </a>
+    <br>
+    <a href="{% url 'crear lanzamientos'%}"> Nuevo </a>
+    <br>
+    <a href="{% url 'Actualizar lanzamientos' lanzamientos.id %}"> Actualizar </a>
+    <br>
+    <a href="{% url 'borrar lanzamientos' lanzamientos.id %} "> Eliminar </a>
+    <br>
+    ################################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    {% endfor %}
+
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "AppCoder/padre.html" %}
+
+
+{% block titulo %}
+
+    Resultados de Busqueda
+
+{% endblock %}
+
+{% block descripcion %}
+
+    <P>Estamos buscando la reseña de : {{nombre}}</P>
+
+    {% for nombre in nombre %}
+
+    <p>Nombre: {{nombre.Nombre_del_videojuego}}---- Fecha{{nombre.Fecha}}</p>
+
+    {% endfor %}
+
+
+{% endfor %}
+
+{% endblock %}
